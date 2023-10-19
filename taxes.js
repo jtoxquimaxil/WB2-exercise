@@ -1,8 +1,10 @@
 "use strict"
 
-var salary = 450
+var salary = 420;
 
-var federalTaxes = (23/100)
+var federalTaxes = 0.23;
 
-var withheldTaxesAmount = 
+var amountWithheld = federalTaxes * salary;
+
+console.log( amountWithheld + "is the amount withheld for taxes" );
 
