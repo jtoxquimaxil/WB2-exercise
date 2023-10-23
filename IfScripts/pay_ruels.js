@@ -16,7 +16,7 @@ var hoursWorked = 20;
 
 var overTime = 40 - hoursWorked
 
-var grossPay = (payRate * hoursWorked) + (overTime * payRate * 1.5);
+var grossPay = (hoursWorked * payRate) + (overTime * payRate * 1.5 );
 
 if (hoursWorked > 40 ) {
     overTime = 40 - hoursWorked;  
@@ -33,11 +33,11 @@ console.log("The amount of overtime hours worked were " + overTime);
 
 var payRate = 25.00;
 
-var hoursWorked = 20;
+var hoursWorked = 40;
 
 var overTime = hoursWorked - 40 
 
-var grossPay = (payRate * hoursWorked)
+var grossPay = (payRate * hoursWorked) + (overTime * payRate * 1.5 );
 
 if (hoursWorked <= 40 ) {
     overTime = hoursWorked - 40;  
@@ -58,7 +58,7 @@ var hoursWorked = 45;
 
 var overTime = hoursWorked - 40 
 
-var grossPay = (payRate * hoursWorked);
+var grossPay = (payRate * hoursWorked) + ( overTime * payRate * 1.5);
 
 if (hoursWorked > 40 ) {
     overTime = hoursWorked - 40;  
